@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+body{
+ background-color:darkslategray;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: greenyellow;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+.wholecal{
+    background: rgb(36, 35, 35);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1rem;
+    height: 45rem;
+    width: 30rem;
+
+}
+input{
+    border: none;
+    margin-top: .5rem;
+    height: 5rem;
+    width: 28rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: xx-large;
+    text-align: right;
+    overflow: scroll;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.2rem;
+    padding: 1rem;
+}
+button{
+    border: none;
+    /* box-shadow: 1px 1px 10px 10px rgb(148, 148, 211) inset; */
+    box-shadow: 0px 0px 3px 7px rgb(130, 169, 70);
+    height: 6rem;
+    width: 6rem;
+    background: greenyellow;
+    color:coral;
+    font-size: x-large;
+    border-radius: 2rem;
+
+    &:hover{
+        background: rgb(166, 187, 136);
+        color: aliceblue;
+    }
+}
+button:active{
+    background: green;
+}
+
+.operator{
+    background: white;
+    color: black;
+    font-size: xx-large;
+
+    &:hover{
+        background: orange;
+    }
+}
+.operator:active{
+    background: rgb(75, 53, 13);
+}
